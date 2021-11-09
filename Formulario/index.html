@@ -13,10 +13,11 @@
 </head>
 <body>
     <div class="login">
-        <h1 class="texc texp">Iniciar Sesión</h1>
-        <p class="texc">Ingresa los datos con los que te has registrado para poder continuar</p>
+        <h1 class="texc texp">Registrarme</h1>
+        <p class="texc">Ingresa los datos que se te piden a continuación</p>
 
-        <form >
+        <form action="/api/user/register" >
+            <input type="text" placeholder="Nombre">
             <input type="email" name="email" placeholder="Correo electronico">
             <div class="input-grup">
                 <input type="password" name="password" placeholder="Contraseña">
@@ -28,14 +29,12 @@
                 <input type="checkbox" name="remember">
                 Recordar mis datos
             </label>
-            <button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+            <button type="submit" class="btn btn-primary">Registrarme</button>
 
             <div class="texc">
-                <small><a href="#">¿Olvidaste tu Contraseña?</a></small>
+                <small>Al registrarte en <b>ITS</b> aceptas los <a href="#"> terminos y condiciónes del servicio</a></small>
             </div>
-            <div class="texc">
-                <small>¿Aún no tienes cuenta? <a href="#">Registrate</a></small>
-            </div>
+            
         </form>
     </div>
 </body>
